@@ -1,11 +1,11 @@
 server:
-  port: 8088
+  port: ${port}
 
 spring:
   datasource:
-    url: jdbc:postgresql://shuttle.proxy.rlwy.net:39885/railway
+    url: ${databaseLink}
     username: postgres
-    password: oZNrfAmSBKAUxjVAdEmdBHZLVmSgLRFV
+    password: ${databasePassword}
     driver-class-name: org.postgresql.Driver
 
   jpa:
